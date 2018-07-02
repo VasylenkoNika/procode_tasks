@@ -1,0 +1,17 @@
+.gallery{
+    width: 800px;
+}
+.bigfoto img{
+    width:500px;
+    display: block;
+    margin: 0 auto;
+}
+.bigfoto{
+    padding-bottom: 10px;
+     
+}
+.fotos img{
+    width:250px;
+    display: inline-block;
+    margin: 0 auto;
+}
