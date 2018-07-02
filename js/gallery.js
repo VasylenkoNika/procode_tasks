@@ -8,10 +8,10 @@
 //     })
 // })
 
-
-let showImg = document.querySelector('.active');
-function InitializeGallery(){
-    this.images = document.querySelectorAll(".fotos img");
+let gallery = document.querySelector(".gallery")
+let showImg = gallery.querySelector('.active');
+function InitializeGallery(gallery){
+    this.images = gallery.querySelectorAll(".fotos img");
         this.images.forEach((item, i)=>{
             item.addEventListener("mouseover", function(){
                 showImg.src = item.dataset.bigImage; 
@@ -20,4 +20,4 @@ function InitializeGallery(){
         })
 }
 
-let initializePhoto = new InitializeGallery();
+let initializePhoto = new InitializeGallery(gallery);
